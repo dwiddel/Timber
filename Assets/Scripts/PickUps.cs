@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PickUpss : MonoBehaviour
+public class PickUps : MonoBehaviour
 {
 
     void OnTriggerEnter(Collider other)
@@ -16,9 +16,9 @@ public class PickUpss : MonoBehaviour
             //gameStatus.GetComponent<GameStatus>().AddScore(1);
             //gameStatus.AddScore(1);
           
-            if (this.gameObject.tag == "Coin")
+            if (this.gameObject.tag == "Shirt")
             {
-                Debug.Log("Coin");
+                Debug.Log("Shirt");
                 FindObjectOfType<GameStatus>().AddScore(1);
                 FindObjectOfType<AudioManager>().Play("Pickup");
             }
